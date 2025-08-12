@@ -94,6 +94,12 @@ quizForm.addEventListener('submit',(e)=>{
         feedback.className = 'mt-4 text-lg font-semibold text-red-600';
     }
 })
+const nextWordbtn = document.getElementById('nextWordbtn');
+nextWordbtn.addEventListener('click',()=>{
+    quizIndex = Math.floor(Math.random()*wordBank.length);
+    currentQuiz = wordBank[quizIndex];
+    loadQuiz();
+})
 const flashcardWord = document.getElementById('flashcardWord');
 const flashcardMeaning = document.getElementById('flashcardMeaning');
 const revealBtn = document.getElementById('revealBtn');
