@@ -49,7 +49,7 @@
         </div>
     </section>
 
-    <!-- categories -->
+    <!-- categories
     <section class="p-4">
         <h3 class="text-lg font-semibold mb-2">📚 Categories</h3>
         <div class="grid grid-cols-2 gap-4 ">
@@ -62,11 +62,11 @@
 
         </div>
 
-    </section>
+    </section> -->
 
     <!-- quiz section -->
 
-    <section id="quizSection" class="p-4 ">
+    
       <div id="quizModal" class="fixed inset-0 bg-black bg-opacity-50
       flex items-center justify-center hidden z-50 ">
 
@@ -76,10 +76,23 @@
             What does <span id="quizWordClickable" 
             class="font-bold text-indigo-600 cursor-pointer underline">"Wrinkle"</span> means?
         </p>
+        <p id="wordMeaningRevel" class="text-gray-700 mt-2 hidden"></p>
+
+        <form id="quizForm" class="space-y-2">
+            <div id="quizOption"></div>
+            <button type="submit" class="mt-4 bg-indigo-600 text-white px-4 py-2
+            rounded hover:bg-indigo-700 transition">
+        Submit Answer
+        </button>
+        </form>
+
+        <p id="quizfeedBack" class="mt-4 text-lg font-semibold"></p>
+
+        <button id="closeQuizBtn" class="absolute top-2 right-2 text-gray-500
+        hover:text-red-600 text-xl font-bold">❌</button>
       </div>
     
     </div>
-    </section>
 
     <!-- flashcard -->
 
