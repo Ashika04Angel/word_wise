@@ -67,6 +67,7 @@ function loadQuiz(){
     wordMeaningReveal.textContent = currentQuiz.correct;
     quizOption.innerHTML = '';
     feedback.textContent = '';
+    
 
     currentQuiz.options.forEach((option,index)=>{
         const id = `option${index}`;
@@ -99,6 +100,7 @@ nextWordbtn.addEventListener('click',()=>{
     quizIndex = Math.floor(Math.random()*wordBank.length);
     currentQuiz = wordBank[quizIndex];
     loadQuiz();
+    updateProgressbar()
 })
 const flashcardWord = document.getElementById('flashcardWord');
 const flashcardMeaning = document.getElementById('flashcardMeaning');
